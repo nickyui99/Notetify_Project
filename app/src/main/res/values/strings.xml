@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Notetify</string>
+    <string name="Notetify_Logo">Notetify</string>
+    <string name="siginOptions">Sign in with</string>
+    <string name="nav_drawer_open">Open navigation drawer</string>
+    <string name="nav_drawer_close">Close navigation drawer</string>
+    <string name="today_step">Today\'s Step</string>
+    <string name="calorie_burn">Calorie Burn</string>
+    <string name="Notetify_Slogan">Record Your Things Easier</string>
+    <string name="notes">Notes</string>
+    <string name="financial_planner">Financial Planner</string>
+    <string name="todo_list">TODO List</string>
+    <string name="reminder">Reminder</string>
+    <string name="delete">Delete</string>
+    <string name="lock">Lock</string>
+    <string name="done">Done</string>
+    <string name="title_activity_date_time_test">DateTimeTest</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="enterPrivacyPassword">Enter Privacy Pin</string>
+    <string name="empty_string">" "</string>
+    <string name="forgot_password"> <u>Forgot password?</u></string>
+    <string name="reenter_password">Please Re-enter Your Privacy Pin</string>
+    <string name="wrong_password"> Wrong Pin</string>
+    <string name="choose_security_question">1. Please Choose Your Security Question</string>
+    <string name="input_security_answer">2. Please Enter Your Security Answer</string>
+    <string name="verification">Verification</string>
+    <string name="verification_guide">First, You Need To Verify Yourself</string>
+    <string name="proceed">Proceed</string>
+    <string name="reset_password">Reset Pin</string>
+    <string name="reset_password_guide">Hey, You Are Almost There</string>
+    <string name="enter_new_password">1. Please Enter Your New Pin (6 Numeric Pin)</string>
+    <string name="reenter_new_password">2. Please Re-enter Your New Pin (6 Numeric Pin)</string>
+    <string name="reset">Reset Pin</string>
+    <string name="edit_financial_list">EDIT LIST</string>
+    <string name="add_new_financial">ADD NEW LIST</string>
+    <string name="chart_title">Average Expenses</string>
+    <string name="expense_event">Expense Event</string>
+    <string name="event_date">Event Date</string>
+    <string name="expense_category">Expense Category</string>
+    <string name="expense_amount">Expense Amount</string>
+    <string name="cancel">CANCEL</string>
+    <string name="date">Date</string>
+    <string name="settings">Settings</string>
+    <string name="backup_notes">Backup Notes To Drive</string>
+    <string name="restore_notes">Restore Notes From Drive</string>
+    <string name="backup"><![CDATA[Backup & Restore]]></string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="visit_privacy_policy">Visit Notetify Privacy Policy Website</string>
+
+
+    <string-array name="security_question_array">
+        <item>None</item>
+        <item>What primary school did you attend?</item>
+        <item>Who was your childhood hero?</item>
+        <item>What is the name of your favorite childhood teacher?</item>
+        <item>What is the name of the company of your first job?</item>
+        <item>What are the last 5 digits of your phone number?</item>
+        <item>What is your favorite movie?</item>
+    </string-array>
+
+    <string-array name="expenses_category_array">
+        <item>Basic Necessity</item>
+        <item>Healthcare</item>
+        <item>Loans</item>
+        <item>Utilities</item>
+        <item>Insurance</item>
+        <item>Education</item>
+        <item>Family Funds</item>
+        <item>Others</item>
+    </string-array>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SecurityQuestionActivity">
+
+    <Spinner
+        android:id="@+id/spinnerSecurityQuestion"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/spinner_background"
+        app:layout_constraintEnd_toEndOf="@+id/txtViewChooseQuestion"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtViewChooseQuestion"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewChooseQuestion"
+        android:spinnerMode="dropdown"
+        android:clickable="true"
+        android:focusable="true"
+        android:dropDownWidth="match_parent"/>
+
+    <TextView
+        android:id="@+id/txtViewChooseQuestion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/choose_security_question"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewInputAnswer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/input_security_answer"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerSecurityQuestion"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/spinnerSecurityQuestion"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerSecurityQuestion" />
+
+    <EditText
+        android:id="@+id/editTextSecurityAnswer"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textViewInputAnswer"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewInputAnswer"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInputAnswer" />
+
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="268dp"
+        android:backgroundTint="@color/fab_purple"
+        android:textColor="@color/white"
+        android:text="Done"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextSecurityAnswer"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextSecurityAnswer"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSecurityAnswer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

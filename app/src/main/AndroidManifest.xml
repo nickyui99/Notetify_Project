@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.xera.notetify">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <queries>
+        <intent>
+            <action android:name="com.huawei.hms.core.aidlservice" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.StepUP">
+        <activity
+            android:name=".Activities.EditListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.AddNewFinancialListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.FinancialPlannerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.SettingsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.ResetPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.VerificationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.SecurityQuestionActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.SetPrivacyLockActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.PrivacyLockActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.NoteViewActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activities.NoteActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.DashboardActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.LoginHuaweiActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:usesCleartextTraffic="true"
+            tools:targetApi="m">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:exported = "true"
+            android:resource="@array/preloaded_fonts" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.channel.androidMarket"
+            android:value="false" />
+
+        <receiver
+            android:name=".Controller.ReminderBroadcast"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.media.action.DISPLAY_NOTIFICATION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".Controller.NotificationService"
+            android:enabled="true"
+            android:exported="false"
+            android:label="@string/reminder"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="your.app.domain.NotificationService" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

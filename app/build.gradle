@@ -1,0 +1,76 @@
+plugins {
+    id 'com.android.application'
+    // Add the following configuration:
+    id 'com.huawei.agconnect'
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.xera.notetify"
+        minSdk 21
+        targetSdk 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+    }
+
+    packagingOptions {
+//        exclude 'META-INF/DEPENDENCIES'
+//        exclude 'META-INF/NOTICE'
+//        exclude 'META-INF/LICENSE'
+//        exclude 'META-INF/LICENSE.txt'
+//        exclude 'META-INF/NOTICE.txt'
+//        exclude 'META-INF/DEPENDENCIES'
+//        exclude 'META-INF/license.txt'
+//        exclude 'META-INF/notice.txt'
+//        exclude 'META-INF/ASL2.0'
+//        exclude 'META-INF/proguard/okhttp3.pro'
+        exclude 'okhttp3/internal/publicsuffix/publicsuffixes.gz'
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.navigation:navigation-fragment:2.3.5'
+    implementation 'androidx.navigation:navigation-ui:2.3.5'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    //Material Design
+    implementation 'com.google.android.material:material:1.4.0'
+
+    //HMS Library
+    implementation 'com.huawei.agconnect:agconnect-core:1.5.2.300'
+    implementation 'com.huawei.hms:hwid:6.1.0.302'
+    implementation 'com.huawei.hms:ads-lite:13.4.46.300'
+    implementation 'com.huawei.hms:drive:5.0.0.305'
+    implementation 'com.huawei.hms:push:5.3.0.301'
+    implementation 'com.huawei.hms:hianalytics:6.2.0.301'
+
+    //Circle Image View
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    // Chart and graph library
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+}

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:foregroundGravity="center"
+    tools:context=".Activities.VerificationActivity">
+
+    <TextView
+        android:id="@+id/txtViewVerification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/verification"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtViewVerificationGuide"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/verification_guide"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewVerification" />
+
+    <TextView
+        android:id="@+id/txtViewChooseSecurityQuestion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/choose_security_question"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtViewVerificationGuide"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtViewVerificationGuide"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewVerificationGuide" />
+
+    <Spinner
+        android:id="@+id/spinnerSecurityQuestion1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/spinner_background"
+        android:clickable="true"
+        android:dropDownWidth="match_parent"
+        android:focusable="true"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="@+id/txtViewChooseSecurityQuestion"
+        app:layout_constraintStart_toStartOf="@+id/txtViewChooseSecurityQuestion"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewChooseSecurityQuestion" />
+
+    <TextView
+        android:id="@+id/textViewInputSecurityAnswer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/input_security_answer"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerSecurityQuestion1"
+        app:layout_constraintStart_toStartOf="@+id/spinnerSecurityQuestion1"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerSecurityQuestion1" />
+
+    <EditText
+        android:id="@+id/editTextSecurityAnswer1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textViewInputSecurityAnswer"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewInputSecurityAnswer"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInputSecurityAnswer" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fabProceed"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="32dp"
+        android:paddingStart="0dp"
+        android:paddingEnd="0dp"
+        android:text="@string/proceed"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:backgroundTint="@color/purple_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
